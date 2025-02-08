@@ -1,31 +1,20 @@
 # PL2025-A104365
 🗂️ Course TPC repository for UM for PL in 2024/25
 
-#### Author Card
+#### Author
 <table>
   <tr>
     <td>
-      <img src="/assets/image-placeholder.svg" alt="Profile Picture" width="100px" />
+      <img src="/assets/Photo.jpg" alt="Profile Picture" width="120px" />
     </td>
     <td style="text-align: left;">
       <p><strong>Name:</strong> Fábio Magalhães</p>
       <p><strong>Number:</strong> A104365</p>
+      <p><strong>Course:</strong> Web Engineering</p>
+      <p><strong>Year:</strong> 2024/25</p>
     </td>
   </tr>
 </table>
-
-#### File Structure
-```md
-📁 .
-├── 📄 README.md  *(Repository Manifest)*
-├── 📁 TPC1
-│   ├── 📄 README.md
-│   ├── 📄 file1.ext
-│   └── 📄 file2.ext
-└── 📁 TPC2
-    ├── 📄 README.md
-    └── 📄 project.docx
-```
 
 #### What's in this repository?
 
