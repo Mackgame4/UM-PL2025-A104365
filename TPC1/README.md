@@ -10,3 +10,31 @@ Foi pretendida nesta tarefa a implementação de um somador **SEM O USO DE REGEX
 ## Results
 Foi verificado que sem expressões regulares (RegExp) a implementação do somador é mais complexa e menos eficiente. A implementação do somador sem expressões regulares é mais complexa pois é necessário verificar se a palavra *on* ou *off* está presente na string de input bem como a filtragem dos digitos na linha.
 Tal problema foi ultrapassado colocando todo o input num mesmo formato o que pode ter impacto na eficiência do programa e possiveis erros.
+
+Para iniciar o programa pode ser utilizado:
+```bash
+python .\somadoronoff.py
+```
+
+You can also test the result by pasting on your stdin the following:
+```
+Hoje, 7 de Fevereiro de 2025, o professor de Processamento de Linguagens
+deu-nos
+este trabalho para fazer.=OfF
+E deu-nos 7=
+dias para o fazer... ON
+Cada trabalho destes vale 0.25 valores da nota final!=
+```
+
+And the wanted result should be:
+```
+Hoje, 7 de Fevereiro de 2025, o professor de Processamento de Linguagens
+deu-nos
+este trabalho para fazer.=OfF
+>> 2032
+E deu-nos 7=
+>> 2032
+dias para o fazer... ON
+Cada trabalho destes vale 0.25 valores da nota final!=
+>> 2057
+```

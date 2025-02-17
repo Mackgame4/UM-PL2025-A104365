@@ -4,14 +4,16 @@ ON_STR = 'on'
 OFF_STR = 'off'
 EQUALS_STR = '='
 
+isOn = True # Start ON by default
+soma = 0
+
 def somadoronoff(l):
-    isOn = False
-    soma = 0
+    global isOn, soma # Use global variables
     i = 0
     while i < len(l):
         valor = 0
         sinal = 1
-        if l[i] == '-':
+        if l[i] == '-': # Read signal
             sinal = -1
             i += 1
         if l[i] in '0123456789':
@@ -29,14 +31,13 @@ def somadoronoff(l):
             i += len(OFF_STR)
         elif l[i:].startswith(EQUALS_STR):
             i += len(EQUALS_STR)
-            print(soma)
-            #soma = 0 # dont reset the sum
+            print(f">> {soma}")
         else:
             i += 1
 
 def main():
     for l in sys.stdin:
-        l = l.lower() # put all characters in lower case to check with the strings variables
+        l = l.lower()
         somadoronoff(l)
 
 if __name__ == '__main__':
