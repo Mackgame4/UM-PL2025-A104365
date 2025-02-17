@@ -18,7 +18,7 @@ python -m TPC2.csvparser
 ```
 -->
 
-The code is able to detect when or not the description field is multi-line and print the content of the CSV file as desired. And deliver the expected results.
+The code is able to detect when or not the description field is multi-line and print the content of the CSV file as desired. And deliver the expected results. And the CSV parser works with any CSV file. (It can be used without construction a class object).
 
 To run the program you can use:
 ```bash

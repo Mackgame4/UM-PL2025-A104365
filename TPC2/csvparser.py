@@ -38,13 +38,14 @@ def read_csv(file_path):
     buffer = ""
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
+        field_number = len(split_line(lines[0].strip())) # Use the header to determine the number of fields
         for line in lines[1:]: # Skip the header
             line = line.strip()
             if not line:
                 continue
             buffer += line + " "
             fields = split_line(buffer.strip())
-            if len(fields) == 7: # All fields were read
+            if len(fields) == field_number: # All fields were read
                 data.append(Obra(*fields))
                 buffer = ""
         return data
