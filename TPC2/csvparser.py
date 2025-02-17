@@ -55,9 +55,11 @@ def inverter_nome(compositor):
         return f"{partes[1].strip()} {partes[0].strip()}"
     return compositor
 
+import locale
+locale.setlocale(locale.LC_ALL, 'pt_PT.UTF-8')
 def obter_compositores(obras):
     # Extrair os nomes dos compositores e ordenar alfabeticamente
-    return sorted(set(inverter_nome(obra.compositor) for obra in obras), key=lambda x: x.split()[-1])
+    return sorted(set(inverter_nome(obra.compositor) for obra in obras),  key=locale.strxfrm)
 
 def contar_obras_por_periodo(obras):
     # Contar o número de obras por período
