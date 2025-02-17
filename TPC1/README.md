@@ -38,3 +38,8 @@ dias para o fazer... ON
 Cada trabalho destes vale 0.25 valores da nota final!=
 >> 2057
 ```
+
+or you can run the unit testing script using:
+```bash
+python -m unittest test_somadoronoff.py
+```
